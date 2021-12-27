@@ -17,7 +17,7 @@
         </div>
         <div class="form-group mb-2">
             {{ Form::label('Propietario') }}
-            {{ Form::select('id_propietario', $propietarios ,$coch->id_propietario, ['class' => 'form-control', 'id' => 'selectProp', 'name' => 'selectProp' . ($errors->has('id_propietario') ? ' is-invalid' : ''), 'placeholder' => 'Seleccionar']) }}
+            {{ Form::select('id_propietario', $propietarios ,$coch->id_propietario, ['class' => 'form-control' . ($errors->has('id_propietario') ? ' is-invalid' : ''), 'placeholder' => 'Seleccionar']) }}
             {!! $errors->first('id_propietario', '<div class="invalid-feedback">:message</div>') !!}
         </div>
 
